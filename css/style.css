@@ -1,0 +1,792 @@
+
+/* Golobal style */
+
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* style */
+
+body {
+    background-image: url('../images/back.png');
+    background-size:cover;
+    color: #fff;
+    padding: 100px 0;
+    
+}
+
+ .container {
+    overflow: hidden;
+}
+
+
+
+
+/* End Globale Style */
+
+#profile {
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+section .container .share {
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+
+section .container .share .i-share  {
+    float:right;
+    margin-left: 3px;
+    color: #fff;
+    background-color: tomato;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+section .container .wrap-share li a {
+    float:right;
+    margin-left: 3px;
+    color: #fff;
+    background-color: tomato;
+    padding: 5px 10px;
+    font-size: 20px;
+    
+}
+
+
+
+
+section header {
+    background-color: tomato;
+    border-radius: 8px;
+    
+}
+section header img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+section header .mid-info {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+
+}
+
+section header .mid-info h3 {
+    margin: -10px 0 40px 0
+}
+
+section header .last-info {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section header .last-info h5 {
+    line-height: 2;
+    font-size: 16px;
+    
+}
+
+
+ nav {
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+ nav ul {
+    overflow: hidden;
+    border-top:1px solid rgba(3, 3, 3, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ nav li {
+    float:left;
+    padding:20px 20px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+ nav li a {
+    color: #999;
+    transition: all 1s;
+}
+
+ nav li span {
+    display: block;
+    font-weight:600;
+    margin-top: 10px;
+    
+}
+
+ nav li:hover a{
+    text-decoration: none;
+    color: tomato;
+    
+}
+
+
+ nav li:hover{
+    background-color: rgb(181, 243, 12, .5);
+    color: tomato;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px rgba(23, 24, 23, 0.3);
+    padding-top: 20px;
+    
+}
+
+
+@media (max-width:767px) {
+    nav ul {
+        padding: 40px;
+    }
+
+    nav li {
+        width: 24%;
+        margin: 10px 8%;
+        text-align: center;
+        padding: 20px 0;
+        
+    }
+}
+
+.active {
+    background-color: rgb(181, 243, 12, .5);
+
+    border-radius: 10px;
+    box-shadow:5px 5px 20px rgba(23, 24, 23, 0.3);
+    padding-top: 20px;
+}
+
+.active a {
+    color: tomato;
+}
+
+@media (max-width: 991px) {
+    section {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------*/
+
+#resume {
+    overflow: hidden;
+    display: none;
+}
+
+
+#resume .resume-left {
+    width: 47.5%;
+    float: left;
+    background-color: #fff;
+}
+
+
+#resume .resume-left .text-top {
+    background-color: silver;
+    padding: 20px 10px 20px 25px;
+}
+
+#resume .resume-left .text-top h1 {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+
+}
+
+#resume .resume-left .text-top h1:first-child {
+    color: #000;
+    font-weight: 700;
+}
+
+#resume .resume-left .text-top h1:nth-child(2) {
+    margin-left: 50px;
+    font-weight: 700;
+    color: green;
+}
+
+#resume .resume-left .text-top h4 {
+    color: #fff;
+    background: green;
+    width: 140px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#resume .resume-left .res-info {
+    padding: 20px 10px 20px 25px;
+}
+
+#resume .resume-left .res-info h3 {
+    font-size: 20px;
+    color: tomato;
+    margin-bottom: 30px;
+}
+
+#resume .resume-left .res-info h3 span {
+    margin-left: 40px;
+    color: #000;
+}
+
+
+#resume .resume-left .exepirience {
+    color: #000;
+}
+
+
+#resume .resume-left .exepirience h2 {
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+#resume .resume-left .exepirience .prject {
+    padding: 15px 10px 22px 25px;
+}
+
+#resume .resume-left .exepirience .prject h3 {
+    width: 150px;
+    font-size: 20px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#resume .resume-left .exepirience .prject h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#resume .resume-left .exepirience .prject p {
+    color: #777;
+}
+
+
+#resume .resume-right {
+    background-color: #000;
+    color: #fff;
+    width: 52.5%;
+    float: left;
+    padding: 55px 10px 20px 25px;
+}
+
+#resume .resume-right .ic {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px 20px 25px;
+    margin-bottom: 50px;
+}
+
+#resume .resume-right .ic span {
+    border: 4px solid palevioletred;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 50px ;
+}
+
+#resume .resume-right .my-skils {
+    color: #fff;
+
+}
+
+#resume .resume-right .my-skils h2 {
+    letter-spacing: 3px;
+}
+
+#resume .resume-right .my-skils .pr-sk {
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#resume .resume-right .my-skils .pr-sk h4 {
+    float: left;
+    width: 40%;
+    margin: 0;
+    color: #fff;
+}
+
+#resume .resume-right .my-skils .pr-sk .progress {
+    position: relative;
+    top: 7px;
+}
+
+
+#resume .resume-right .interstes {
+    margin-top: 60px;
+}
+
+#resume .resume-right .interstes h2 {
+    letter-spacing: 3px;
+}
+
+#resume .resume-right .interstes .in-ic {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+
+#resume .resume-right .education {
+    margin-top: 55px;
+}
+
+#resume .resume-right .education h2 {
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+#resume .resume-right .education .prject h3 {
+    width: 150px;
+    font-size: 20px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.ed {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#resume .resume-right .education .prject p {
+    color: #ccc;
+}
+
+
+
+
+
+
+@media (max-width:990px) {
+    #resume .resume-left {
+        width: 100%;
+    }
+
+    #resume .resume-left .text-top h1:nth-child(2) {
+        margin-left: 0;
+    }
+
+    #resume .resume-left .res-info h3 {
+        text-align: left;
+    }
+
+    #resume .resume-left .text-top h4 {
+        margin: 20px auto;
+       
+    }
+
+    #resume .resume-left .exepirience {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #resume .resume-left .exepirience .prject {
+        width: 50%;
+    }
+
+    #resume .resume-left .exepirience .prject h3 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    #resume .resume-right {
+        width: 100%;
+    }
+
+    #resume .resume-right .education {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #resume .resume-right .education .prject {
+        width: 50%;
+        padding: 10px;
+    }
+
+    #resume .resume-right .education .prject h3 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .ed {
+        background-color: green;
+    padding: 15px;
+    border-radius: 5px;
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    
+    #resume .resume-right .education {
+       padding-bottom: 25px;
+    }
+}
+
+
+
+
+/* End resume */
+
+
+/* Start portfolio */
+
+#portfolio {
+    display: none;
+    
+}
+
+#portfolio .port-folio {
+    padding: 30px 20px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+#portfolio .port-folio ul {
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+#portfolio .port-folio ul li::after {
+    content: "";
+    width: 100%;
+    background-color: #ccc;
+    padding: 1px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+}
+
+
+#portfolio .port-folio li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+#portfolio .port-folio li.selector {
+    background-color: darkred;
+}
+
+#portfolio .port-folio h4 {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 25px;
+    overflow: hidden;
+    color: black;
+}
+
+#portfolio .port-folio h4:after {
+    content: "";
+    width: 100%;
+    background-color: #ccc;
+    padding: 1px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+#portfolio .port-folio .myMixin {
+    width: 100%;
+    color: #666;
+    margin-top: 40px;
+    overflow: hidden;
+    
+}
+
+#portfolio .port-folio .myMixin .mix {
+    float: left;
+    width: 31%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#portfolio .port-folio .myMixin .mix img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 180px;
+    box-shadow: 2px 3px 14px #a2a1a1;
+    
+}
+
+
+
+@media (max-width:767px) {
+
+    #portfolio .port-folio ul {
+        text-align: center;
+    }
+
+    #portfolio .port-folio ul li{
+        width: 40%;
+        margin-bottom: 25px;
+        margin-left: 5%;
+
+    }
+
+    #portfolio .port-folio ul li:first-of-type{
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+
+    #portfolio .port-folio h4 {
+        font-size: 1.25rem;
+    }
+
+
+    #portfolio .port-folio .myMixin .mix {
+        width: 45%;
+        margin-left: 4%;
+    }
+
+
+}
+
+/* End portfolio */
+
+
+
+#contact {
+    display: none;
+}
+
+#contact .map{
+    height:450px
+}
+
+#contact .contact-info {
+    padding: 20px 10px 20px 25px;
+    background-color: #fff;
+    color:#000;
+    overflow: hidden;
+    
+}
+
+#contact .contact-info .con-left {
+    border-left: 3px solid tomato;
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+#contact .contact-info .con-left h3 {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    position: relative;
+}
+
+#contact .contact-info .con-left h3::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 30%;
+    height: 3px;
+    background-color: tomato;
+}
+
+
+#contact .contact-info .con-left h6 {
+    margin-bottom: 40px;
+
+}
+
+#contact .contact-info .con-left h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#contact .contact-info .con-left h5 span {
+    margin-left: 20px;
+}
+
+
+
+#contact .contact-info .con-right h2 {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 70%;
+    position: relative;
+}
+
+#contact .contact-info .con-right h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 15%;
+    height: 3px;
+    background-color: tomato;
+}
+
+#contact .contact-info .con-right input {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#contact .contact-info .con-right input:last-of-type {
+    height: 140px;
+}
+
+#contact .contact-info .con-right .message {
+    color: #4e4c4c;
+
+}
+
+
+#contact .contact-info .con-right button {
+    background-color: tomato;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+@media (max-width:991px) {
+
+    #contact .contact-info .con-left {
+        border-bottom: 3px solid tomato;
+        border-left: none;
+    }
+
+    #contact .contact-info .con-left h3 {
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+    
+    #contact .contact-info .con-left h3::after {
+        left: 220px;
+        width: 30%;
+    }
+    
+    
+    #contact .contact-info .con-left h6 {
+        margin-bottom: 40px;
+    }
+    
+    #contact .contact-info .con-left h5 {
+        margin-bottom: 25px;
+        text-align: center;
+
+    }
+
+    #contact .contact-info .con-left h5:last-of-type {
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
+    
+
+    #contact .contact-info .col-md-12 {
+        margin-left: 0 !important;
+    }
+    
+    #contact .contact-info .con-right h2 {
+        width: 100%;
+        position: relative;
+        border-bottom: none;
+    }
+    
+    #contact .contact-info .con-right h2::after {
+
+        left: 155px;
+        width: 50%;
+    }
+
+    #contact .contact-info .con-right input {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #contact .contact-info .con-right .message {
+        text-align: left;
+        margin-left: 14%;
+    
+    }
+
+}
+
+@media (max-width:767px) {
+
+    #contact .contact-info .con-left h3::after {
+        left: 160px;
+    }
+
+    #contact .contact-info .con-right h2::after {
+
+        left: 65px;
+        width: 70%;
+    }
+}
+
+
+
+
+
